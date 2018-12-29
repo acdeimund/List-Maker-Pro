@@ -1,0 +1,35 @@
+.context-menu{
+  cursor: pointer;
+  top: -999px;
+  left: -999px;
+  position: absolute;
+  z-index: 100;
+  background-color: transparent;
+  padding-top: 2.25rem; // leaves room for the list item.
+  
+  // This container is manually set to the height of the images inside.
+  // Opacity is required to trigger the transition.
+  &__button-container{
+    visibility: hidden;
+    background-color: $color-light-grey;
+    height: 30px;
+    padding-left: .5rem;
+    padding-bottom: 15px;
+    opacity: 0;
+    // To get the out transition, a timeout in the event handeler is set to 
+    //this value as well. Make sure that matches this.
+    transition: all .2s; 
+  }
+  & svg{
+    border-radius: 50px;
+    display: inline-block;
+    &:hover{
+      background-color: $true-blue-light;
+    }
+  }
+  & #delete{
+    &:hover{
+      background-color: $color-danger;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+td{
+  text-align: center;
+}
+
+.form{
+
+  &__element{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__day{
+    font-size: 4rem;
+    
+  }
+}
+
+.station{
+  &__day{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center
+  }
+
+  &__title{
+    font-size: 2.3rem;
+    min-width: 15rem;
+  }
+
+  &__list-container{
+    text-align: left;
+  }
+
+  &__list-item{
+    font-size: 1.6rem;
+  }
+
+  &__offset-container{
+    font-size: 1.2rem;
+    text-align: center;
+    &--input{
+      text-align: center;
+    }
+  }
+}

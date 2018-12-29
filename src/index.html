@@ -1,0 +1,436 @@
+<!DOCTYPE  html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>List Maker Pro!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link media = "screen" href='css/main.css' rel="stylesheet">
+  <link media = "print" href='css/printer.css' rel="stylesheet">
+</head>
+
+<body>
+  <section class="side-bar">
+    <div class="side-bar__logo-container">
+      <svg class="side-bar__logo" width="250" height="53.142208" viewBox="0 0 250 53.142208">
+        <defs>
+          <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="54%">
+            <stop offset="0%" style="stop-color:rgb(192,192,192);stop-opacity:1" />
+            <stop offset="1%" style="stop-color:rgb(192,192,192);stop-opacity:1" />
+            <stop offset="25%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+            <stop offset="50%" style="stop-color:rgb(192,192,192);stop-opacity:1" />
+            <stop offset="60%" style="stop-color:rgb(128,128,128);stop-opacity:1" />
+            <stop offset="75%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(192,192,192);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <path
+        d="m 52.043136,52.937711 c 0,-0.0477 1.959738,-8.61679 4.354973,-19.04244 2.395236,-10.42565 4.354974,-18.96889 4.354974,-18.98498 0,-0.0161 3.29872,-0.0293 7.330488,-0.0293 h 7.330489 l 0.07362,0.36784 c 0.04049,0.2023 0.142915,0.90261 0.227613,1.55622 0.0847,0.65361 0.200543,1.23348 0.257434,1.28858 0.05748,0.0557 0.323776,-0.0497 0.59935,-0.2371 1.265525,-0.86077 3.532054,-1.92468 5.240882,-2.4601 3.46436,-1.08544 7.058433,-1.24288 10.585609,-0.46367 2.416981,0.53394 3.924819,1.25842 5.539894,2.66179 1.419016,1.233 2.088418,2.21622 2.664098,3.91305 1.16687,3.43936 -0.0278,8.56258 -2.832772,12.14847 -0.915643,1.17055 -3.287238,3.20549 -4.646897,3.98724 -2.874013,1.65245 -5.956593,2.61005 -9.619145,2.9882 -4.78313,0.49383 -8.991153,-0.16437 -11.564295,-1.80885 l -0.623681,-0.39859 -0.223059,0.93291 c -0.122682,0.5131 -0.878551,3.78504 -1.679709,7.27099 l -1.456649,6.33807 -7.956607,0.0292 c -4.376134,0.016 -7.956607,-0.01 -7.956607,-0.0575 z m 24.842748,-16.71474 c 2.532958,-0.46745 4.872775,-2.33136 6.0702,-4.83557 0.97815,-2.04563 1.499466,-4.25273 1.506188,-6.37675 0.0083,-2.60729 -0.785214,-4.04746 -2.64066,-4.79286 -0.962752,-0.38678 -2.84836,-0.47674 -3.981517,-0.18994 -0.926491,0.2345 -2.129332,0.75266 -2.408175,1.03742 -0.132703,0.13551 -0.768393,2.6661 -1.785421,7.1075 -1.779361,7.77052 -1.723565,7.02702 -0.571464,7.61484 1.171961,0.59796 2.257702,0.722 3.810849,0.43536 z m 106.586456,4.44712 c -2.89419,-0.23054 -5.46065,-0.82397 -7.74358,-1.79049 -3.15784,-1.33693 -5.16871,-3.21382 -6.18901,-5.77659 -0.42201,-1.06002 -0.42808,-1.10397 -0.43018,-3.11245 -0.002,-1.87592 0.0259,-2.12459 0.35218,-3.14046 1.08154,-3.36739 3.29169,-6.0904 6.71684,-8.27541 2.95871,-1.88746 7.39339,-3.35346 11.75964,-3.88746 2.27064,-0.2777 7.57716,-0.27241 9.37903,0.009 5.61759,0.87843 8.67166,3.44962 8.02104,6.75283 -0.53718,2.72734 -3.86605,5.15365 -7.50104,5.46729 l -0.65,0.0561 -2.71555,-4.45692 c -2.38112,-3.90803 -2.7438,-4.44376 -2.94495,-4.35003 -0.35346,0.16469 -1.75309,1.4163 -2.38206,2.13012 -1.61097,1.82836 -2.77118,4.23706 -3.41574,7.09146 -0.31404,1.39073 -0.3119,3.69782 0.004,4.69697 1.07574,3.39835 4.2215,4.78477 9.01182,3.97176 1.27551,-0.21648 3.2863,-0.79367 3.62995,-1.04198 0.10089,-0.0729 0.21139,-0.10818 0.24559,-0.0784 0.0342,0.0298 0.38613,0.81291 0.78209,1.74031 0.83784,1.96236 0.91749,1.75435 -0.90653,2.3671 -2.51759,0.84574 -5.29375,1.39487 -8.26395,1.63463 -1.72229,0.13903 -4.96439,0.13534 -6.75997,-0.008 z m 39.25977,0.05 c -5.96741,-0.40404 -10.82033,-2.20733 -13.12026,-4.87535 -1.47898,-1.71568 -2.11106,-3.44252 -2.10353,-5.74673 0.0124,-3.78793 1.7916,-7.30342 5.08662,-10.05059 3.43779,-2.86621 7.89485,-4.55791 14.10215,-5.35252 2.21686,-0.28379 7.8174,-0.2851 10.00993,-0.003 6.31862,0.81488 10.30415,2.85461 12.27845,6.28395 1.84031,3.19655 1.12732,8.03435 -1.73594,11.77885 -3.4193,4.47168 -9.95304,7.31519 -18.21246,7.92615 -1.45359,0.10752 -4.96896,0.12904 -6.30496,0.0386 z m 5.93085,-4.89449 c 2.14556,-0.82379 3.60677,-3.55857 4.81097,-9.00409 0.29539,-1.33578 0.35218,-1.90431 0.36175,-3.62175 0.0127,-2.2938 -0.0731,-2.6536 -0.80039,-3.35451 -0.87839,-0.84649 -2.83059,-1.01707 -4.37237,-0.38204 -1.86447,0.76791 -3.23405,3.14598 -4.30293,7.47148 -1.4047,5.68441 -1.06444,8.44092 1.1186,9.06204 0.79472,0.22612 2.37029,0.14145 3.18437,-0.17113 z M 0.00891073,40.205051 c 0.07001228,-0.0778 2.10489337,-2.63709 4.52195837,-5.68729 2.417064,-3.0502 5.4283514,-6.84456 6.6917499,-8.43191 1.263398,-1.58735 4.331622,-5.4521 6.818274,-8.58833 l 4.521188,-5.70224 -1.421162,-4.7668998 -1.42116,-4.7669 8.902496,-0.0291 c 4.896374,-0.016 8.92909,-0.006 8.961592,0.0224 0.0325,0.0283 1.538205,4.49784 3.346007,9.9323198 1.807803,5.43448 3.735893,11.23055 4.284647,12.88015 0.548754,1.6496 1.900189,5.71081 3.003189,9.02493 1.103002,3.31412 2.005457,6.07745 2.005457,6.14075 0,0.0772 -3.151699,0.10551 -9.575192,0.086 l -9.575193,-0.029 -0.3727,-1.24497 c -0.204984,-0.68475 -0.613361,-2.04715 -0.907503,-3.02757 l -0.534806,-1.78258 h -8.677506 -8.677509 l -2.3043449,3.05585 -2.3043459,3.05586 H 3.5878313 c -2.94619689,0 -3.6801116,-0.029 -3.57892057,-0.14147 z M 27.473284,28.288541 c 0,-0.1859 -3.035274,-10.19678 -3.11433,-10.27161 -0.06903,-0.0654 -7.026717,8.96192 -7.844563,10.17795 -0.08719,0.12964 0.788256,0.15457 5.427467,0.15457 3.042285,0 5.531426,-0.0274 5.531426,-0.0609 z m 76.764826,11.80333 c 0.0727,-0.2634 5.78468,-25.12821 5.78468,-25.18108 0,-0.0164 3.15504,-0.0298 7.01119,-0.0298 6.56607,0 7.0153,0.0125 7.07576,0.19806 0.0355,0.10893 0.16119,0.88563 0.2793,1.726 0.11812,0.84035 0.23649,1.58948 0.26306,1.66472 0.03,0.0849 0.58065,-0.14726 1.45195,-0.61217 5.25419,-2.80359 9.53104,-3.87198 13.01155,-3.25038 3.67046,0.65551 5.41792,2.9957 4.64141,6.21571 -0.3248,1.34691 -0.98523,2.35443 -2.27494,3.47054 -0.96954,0.83904 -1.32849,1.06367 -2.48682,1.55624 -0.76074,0.3235 -1.91415,0.69943 -2.63311,0.85821 -1.37743,0.30421 -4.20908,0.58414 -4.37519,0.43253 -0.0558,-0.0509 -0.90152,-1.3659 -1.87935,-2.92212 -0.97781,-1.55623 -1.85071,-2.89561 -1.93977,-2.97641 -0.3603,-0.32689 -3.13473,0.47968 -3.75983,1.09305 -0.11362,0.11148 -0.99949,3.71476 -2.21725,9.01858 -1.11541,4.8581 -2.02802,8.86892 -2.02802,8.91292 0,0.044 -3.59884,0.08 -7.99743,0.08 h -7.99743 z m 39.77976,0 c 0.0727,-0.2634 5.78468,-25.12821 5.78468,-25.18108 0,-0.0164 3.58896,-0.0298 7.97549,-0.0298 h 7.97549 l -2.92491,12.73274 -2.92493,12.73274 h -7.97802 -7.97804 z m 12.60964,-29.59254 c -1.47664,-0.17779 -2.86109,-0.6835798 -3.71975,-1.3589598 -0.80583,-0.63383 -1.18857,-1.38528 -1.25722,-2.46839 -0.15192,-2.39665 1.4101,-4.61425 4.00197,-5.68161998 1.43877,-0.5925 2.33378,-0.79247 4.17282,-0.93233 3.40276,-0.25877 6.21934,0.35807 7.51887,1.64666998 0.75999,0.75359 0.97743,1.32078 0.97275,2.53742 -0.0122,3.19566 -2.61038,5.517 -6.90436,6.1689198 -1.02645,0.15584 -3.79912,0.207 -4.78508,0.0883 z"
+        fill="url(#lgrad)" />
+      </svg>
+    </div><!-- .side-bar__logo-container-->
+
+    <!-- 
+      Changes to names in this form must also be made to line_model.js.
+      Changes to the name of the "Model" selection box must also be made 
+      to the 'updateSelection' function in form_view.js.
+    -->
+    <form class="form">
+      <div class="form__selections--primary">
+        <div class="form__element">
+          <label for="model">Model:</label>
+          <select id="model" class="form__selection unitAttribute">
+
+          </select>
+        </div>
+        <div class="form__element">
+          <label for="extColor">Exterior:</label>
+          <select id="extColor" class="form__selection unitAttribute">
+
+          </select>
+        </div>
+
+        <div class="form__element">
+          <label for="intColor">Interior:</label>
+          <select id="intColor" class="form__selection unitAttribute">
+
+          </select>
+        </div>
+
+        <div class="form__element">
+          <label for="hinge">Hinge:</label>
+          <select id="hinge" class="form__selection unitAttribute">
+
+          </select>
+        </div>
+      </div><!-- .form__selections--primary -->
+
+      <div class="form__options--primary">
+        <div class="form__element">
+          <label for="lock">Lock:</label>
+          <input id="lock" name="lock" type="checkbox" class="form__selection unitAttribute" />
+        </div>
+        <div class="form__element">
+          <button id="add-button" class="form__add-button">Add</button>
+        </div>
+      </div><!-- .form__options--secondary -->
+
+
+      <div class="form__selections--secondary">
+        <div class="form__element">
+          <label for="day">Day:</label>
+          <select id="day" class="form__selection unitAttribute">
+            <option id="1" value="1">Monday</option>
+            <option id="2" value="2">Tuesday</option>
+            <option id="3" value="3">Wednesday</option>
+            <option id="4" value="4">Thursday</option>
+            <option id="5" value="5">Friday</option>
+            <option id="6" value="6">Saturday</option>
+          </select>
+        </div>
+        <div class="form__element">
+          <label for="overtime">O.T.</label>
+          <select id="overtime" class="form__selection" value="0">
+            <option id="0" value="0" selected="selected">0</option>
+            <option id="1" value="1">1</option>
+            <option id="2" value="2">2</option>
+          </select>
+        </div>
+      </div><!-- .form__selectins--secondary -->
+
+    </form>
+  </section><!-- .side-bar-->
+  <!---- End Form / Start Lists ---->
+
+  <section class="content">
+
+    <div id="context-menu" class="context-menu">
+      <div class="context-menu__button-container">
+        <svg id='up' width="15" height="15" viewBox="0 0 30.000003 30.000037">
+          <path style="fill:#000000;stroke-width:0.03002792" d="m 15.795806,0.00853638 c 2.122143,0.1376 4.013862,0.6363 5.855912,1.54370002 3.973951,1.9577 6.87817,5.5803 7.929712,9.8911996 0.1622,0.665 0.290195,1.4066 0.362906,2.1029 0.07422,0.7108 0.07422,2.2018 0,2.9125 -0.383669,3.674 -2.029336,7.0148 -4.673966,9.4886 -1.108899,1.0372 -2.269664,1.8409 -3.618652,2.5055 -1.645028,0.8104 -3.345061,1.2985 -5.195243,1.4916 -0.71086,0.074 -2.202083,0.074 -2.912943,0 -3.673226,-0.3835 -7.013267,-2.0275 -9.486074,-4.6693 -1.041815,-1.113 -1.84398,-2.2706 -2.509915,-3.622 -0.810511,-1.6448 -1.298691,-3.3445 -1.491878,-5.1944 -0.07422,-0.7107 -0.07422,-2.2017 0,-2.9125 0.34981,-3.3498 1.727062,-6.3856996 3.997786,-8.8124996 1.721282,-1.8396 3.88186,-3.2105 6.312677,-4.00540002 0.973913,-0.3185 2.117919,-0.5591 3.162389,-0.6651 0.442477,-0.045 1.882565,-0.08 2.267289,-0.055 z M 13.918911,2.3205364 c -2.355686,0.2132 -4.643966,1.0806 -6.475829,2.4547 -0.618746,0.4641 -0.969732,0.7651 -1.438252,1.2336 -1.632204,1.6319 -2.784374,3.6722 -3.362727,5.9546996 -0.579004,2.2849 -0.486504,4.7075 0.266492,6.9796 0.548054,1.6537 1.27285,2.9485 2.424633,4.3315 0.710191,0.8527 1.831594,1.8239 2.849895,2.4681 0.984982,0.6231 1.702193,0.9595 2.875717,1.349 2.583974,0.8577 5.294255,0.8578 7.882327,3e-4 1.667541,-0.5524 2.953346,-1.2745 4.362217,-2.4496 1.324405,-1.1047 2.573928,-2.774 3.306232,-4.4171 0.653238,-1.4656 1.011524,-2.9586 1.125477,-4.6898 0.07593,-1.1536 -0.121524,-2.749 -0.498881,-4.0309 -0.347898,-1.1818 -0.732641,-2.0634996 -1.346654,-3.0859996 -0.83202,-1.3856 -1.938142,-2.6039 -3.276872,-3.6093 -1.869751,-1.4041 -4.151043,-2.272 -6.546606,-2.4906 -0.892646,-0.082 -1.229514,-0.081 -2.147169,0 z m 1.292716,7.1406 c 0.423624,0.088 0.211136,-0.108 3.975111,3.6615996 5.374213,5.3822 5.701563,5.7155 5.780002,5.8853 0.204938,0.4437 0.121261,0.9232 -0.220742,1.2652 -0.341808,0.3418 -0.816295,0.4247 -1.266904,0.2216 -0.11966,-0.054 -0.891555,-0.8129 -4.321926,-4.2495 l -4.176248,-4.1838 -3.556556,3.5464 c -4.726774,4.7133 -4.756978,4.7429 -4.935028,4.8256 -0.44246,0.2055 -0.923193,0.1218 -1.265351,-0.2204 -0.341807,-0.3417 -0.424806,-0.8161 -0.221604,-1.2667 0.05401,-0.1197 0.874401,-0.9528 4.618736,-4.6897 2.504178,-2.4992 4.607108,-4.5810996 4.673174,-4.6262996 0.26534,-0.1816 0.578617,-0.2394 0.917336,-0.1693 z"
+            id="path901" inkscape:connector-curvature="0" />
+        </svg>
+        <svg id='down' width="15" height="15" viewBox="0 0 30.000003 30.000037">
+          <path style="fill:#000000;stroke-width:0.03002792" d="M 14.204195,29.9915 C 12.082052,29.8539 10.190333,29.3552 8.348283,28.4478 4.374332,26.4901 1.470113,22.8675 0.418571,18.5566 0.256371,17.8916 0.128376,17.15 0.055665,16.4537 c -0.07422,-0.7108 -0.07422,-2.2018 0,-2.9125 C 0.439334,9.8672 2.085001,6.5264 4.729631,4.0526 5.83853,3.0154 6.999295,2.2117 8.348283,1.5471 9.993311,0.7367 11.693344,0.2486 13.543526,0.0555 c 0.71086,-0.074 2.202083,-0.074 2.912943,0 3.673226,0.3835 7.013267,2.0275 9.486074,4.6693 1.041815,1.113 1.84398,2.2706 2.509915,3.622 0.810511,1.6448 1.298691,3.3445 1.491878,5.1944 0.07422,0.7107 0.07422,2.2017 0,2.9125 -0.34981,3.3498 -1.727062,6.3857 -3.997786,8.8125 -1.721282,1.8396 -3.88186,3.2105 -6.312677,4.0054 -0.973913,0.3185 -2.117919,0.5591 -3.162389,0.6651 -0.442477,0.045 -1.882565,0.08 -2.267289,0.055 z m 1.876895,-2.312 c 2.355686,-0.2132 4.643966,-1.0806 6.475829,-2.4547 0.618746,-0.4641 0.969732,-0.7651 1.438252,-1.2336 1.632204,-1.6319 2.784374,-3.6722 3.362727,-5.9547 0.579004,-2.2849 0.486504,-4.7075 -0.266492,-6.9796 C 26.543352,9.4032 25.818556,8.1084 24.666773,6.7254 23.956582,5.8727 22.835179,4.9015 21.816878,4.2573 20.831896,3.6342 20.114685,3.2978 18.941161,2.9083 16.357187,2.0506 13.646906,2.0505 11.058834,2.908 9.391293,3.4604 8.105488,4.1825 6.696617,5.3576 5.372212,6.4623 4.122689,8.1316 3.390385,9.7747 c -0.653238,1.4656 -1.011524,2.9586 -1.125477,4.6898 -0.07593,1.1536 0.121524,2.749 0.498881,4.0309 0.347898,1.1818 0.732641,2.0635 1.346654,3.086 0.83202,1.3856 1.938142,2.6039 3.276872,3.6093 1.869751,1.4041 4.151043,2.272 6.546606,2.4906 0.892646,0.082 1.229514,0.081 2.147169,0 z M 14.788374,20.5389 C 14.36475,20.4509 14.577238,20.6469 10.813263,16.8773 5.43905,11.4951 5.1117,11.1618 5.033261,10.992 4.828323,10.5483 4.912,10.0688 5.254003,9.7268 5.595811,9.385 6.070298,9.3021 6.520907,9.5052 c 0.11966,0.054 0.891555,0.8129 4.321926,4.2495 l 4.176248,4.1838 3.556556,-3.5464 c 4.726774,-4.7133 4.756978,-4.7429 4.935028,-4.8256 0.44246,-0.2055 0.923193,-0.1218 1.265351,0.2204 0.341807,0.3417 0.424806,0.8161 0.221604,1.2667 -0.05401,0.1197 -0.874401,0.9528 -4.618736,4.6897 -2.504178,2.4992 -4.607108,4.5811 -4.673174,4.6263 -0.26534,0.1816 -0.578617,0.2394 -0.917336,0.1693 z"
+            id="path901" inkscape:connector-curvature="0" />
+        </svg>
+        <svg id='edit' width="15" height="15" viewBox="0 0 30.000003 30.000037">
+          <path style="fill:#000000;stroke-width:0.03000568" d="m 13.8895,29.973865 c -2.004,-0.1308 -4.3126,-0.8185 -6.1363,-1.828 -3.3099,-1.8322 -5.7735,-4.7898 -6.9757,-8.3744 C 0.2404,18.170265 0,16.694465 0,14.999365 c 0,-1.6889 0.2365,-3.1373 0.7793,-4.7718 0.7387,-2.2247003 1.9543,-4.1826003 3.6433,-5.8684003 2.2633,-2.2589 5.2048,-3.73089997 8.417,-4.21179997 0.6158,-0.092 1.0141,-0.121 1.9649,-0.1418 0.9313,-0.02 1.4592,0.011 2.3396,0.1407 4.2297,0.6212 7.9921,2.99469997 10.3317,6.51759997 1.2806,1.9282 2.0663,4.0124003 2.4014,6.3698003 0.169,1.1888 0.1631,2.8036 -0.015,4.0366 -0.3626,2.5142 -1.3245,4.8691 -2.8084,6.8753 -0.8261,1.1169 -1.978,2.2711 -3.0983,3.1045 -2.2574,1.6791 -5.1489,2.7508 -7.8913,2.9246 -0.5359,0.034 -1.6481,0.034 -2.175,-8e-4 z m 1.65,-2.2496 c 1.8304,-0.092 3.5665,-0.549 5.1889,-1.3663 1.987,-1.0008 3.6043,-2.4332 4.8449,-4.2908 0.6811,-1.0199 1.0969,-1.857 1.4741,-2.9681 0.5219,-1.5371 0.7871,-3.4422 0.6748,-4.8473 -0.2641,-3.3035 -1.572,-6.1465003 -3.8467,-8.3614003 -2.2355,-2.1766 -5.0039,-3.3825 -8.306,-3.6178 -1.1422,-0.081 -2.719,0.1114 -4.0649,0.4971 -1.5843,0.454 -3.004,1.1784 -4.3349,2.2117 -2.6574,2.0633 -4.3497,5.0612003 -4.8213,8.5407003 -0.074,0.5441 -0.075,2.3413 0,2.9029 0.3814,2.9314 1.6278,5.5322 3.5895,7.4903 0.8735,0.8719 1.5896,1.4367 2.5833,2.0373 0.7757,0.4688 1.4822,0.7868 2.505,1.1275 1.1371,0.3788 2.2207,0.5862 3.3599,0.6428 0.2475,0.012 0.477,0.024 0.51,0.027 0.033,0 0.3233,-0.01 0.645,-0.025 z m -7.5898,-5.7385 c 0.3188,-1.6363 0.3983,-2.0566 0.8389,-3.9101 l 5.4079,-5.4246 c 5.1281,-5.1439003 5.418,-5.4292003 5.6029,-5.5134003 0.3907,-0.178 0.7837,-0.1774 1.17,0 0.1731,0.08 0.2882,0.1838 1.0232,0.9215 0.8711,0.8743 0.9258,0.9445 0.9866,1.2656 0.039,0.2033 0,0.4625 -0.1113,0.6739 -0.077,0.1516003 -0.2709,0.3481003 -9.0899,9.2008003 l -1.9583,1.9658 c -1.6821,0.352 -1.8871,0.3933 -3.87,0.8189 z"
+            id="path1007" inkscape:connector-curvature="0" sodipodi:nodetypes="ccsscssssscsscccccssssssssccsccscccccsscscsscc" />
+        </svg>
+        <svg id='delete' width="15" height="15" viewBox="0 0 30.000003 30.000037">
+          <path style="fill:#000000;stroke-width:0.03002792" d="M 14.20418,29.99165 C 12.08204,29.85405 10.19032,29.35535 8.34827,28.44792 4.37431,26.49025 1.4701,22.86766 0.41856,18.55675 0.25636,17.8918 0.12836,17.15011 0.05565,16.45384 c -0.0742,-0.71074 -0.0742,-2.20173 0,-2.91248 C 0.43932,9.8674 2.08498,6.52654 4.72962,4.05278 5.83852,3.01552 6.99928,2.21183 8.34827,1.54729 9.9933,0.73691 11.69333,0.2488 13.54351,0.05565 c 0.71086,-0.0742 2.20208,-0.0742 2.91294,0 3.67323,0.38347 7.01327,2.02754 9.48609,4.66934 1.04179,1.11299 1.84397,2.27058 2.5099,3.62196 0.81051,1.64476 1.29869,3.34453 1.49188,5.19441 0.0742,0.71075 0.0742,2.20174 0,2.91248 -0.34982,3.3498 -1.72705,6.38571 -3.99777,8.81249 -1.72128,1.83959 -3.88187,3.21048 -6.31269,4.0054 -0.97391,0.31849 -2.11792,0.55911 -3.16239,0.66516 -0.44248,0.0449 -1.88257,0.0797 -2.26729,0.0548 z m 1.87689,-2.31203 c 2.35569,-0.21315 4.64397,-1.08051 6.47585,-2.45464 0.61874,-0.46413 0.96971,-0.76517 1.43825,-1.23363 1.63218,-1.63192 2.78437,-3.67219 3.36272,-5.95464 0.579,-2.28497 0.48649,-4.70757 -0.2665,-6.97964 C 26.54334,9.40341 25.81854,8.10858 24.66675,6.72557 23.95658,5.87282 22.83517,4.90164 21.81686,4.25747 20.83188,3.63437 20.11467,3.29792 18.94115,2.90842 16.35717,2.05078 13.64689,2.05068 11.05882,2.90812 9.39128,3.46059 8.10547,4.18265 6.6966,5.35779 5.3722,6.46247 4.12267,8.1318 3.39037,9.77485 c -0.65324,1.46564 -1.01152,2.9586 -1.12548,4.6898 -0.0759,1.15361 0.12153,2.74904 0.49889,4.03093 0.34789,1.1818 0.73263,2.06348 1.34665,3.08599 0.83202,1.38557 1.93814,2.60388 3.27687,3.60924 1.86975,1.40415 4.15104,2.27207 6.54661,2.49068 0.89264,0.0815 1.22951,0.0812 2.14716,-0.002 z m 5.47775,-4.60457 c -0.35771,-0.0753 -0.0897,0.18055 -5.11149,-4.87913 -1.2896,-1.29932 -1.45622,-1.45713 -1.50151,-1.42203 -0.0573,0.0444 -1.10375,1.06597 -1.61105,1.57273 -0.18249,0.18229 -1.0683,1.05291 -1.96845,1.93471 -0.90016,0.88179 -1.77179,1.74026 -1.93696,1.90772 C 8.97435,22.65036 8.71358,22.87832 8.55644,22.95217 8.12168,23.1565 7.63696,23.07119 7.29605,22.73034 6.9539,22.38823 6.87019,21.90771 7.07565,21.46518 c 0.0783,-0.16868 0.27218,-0.36579 2.75912,-2.80531 0.90016,-0.883 1.78533,-1.7541 1.96704,-1.93577 0.18171,-0.18167 0.61764,-0.61271 0.96873,-0.95786 l 0.63835,-0.62756 -0.17293,-0.18166 C 13.14086,14.85712 12.57654,14.28656 11.98194,13.68914 7.64246,9.32904 7.01099,8.68091 6.92617,8.5 6.71968,8.05957 6.80345,7.57724 7.1459,7.23484 7.48786,6.89293 7.96343,6.8099 8.4128,7.01365 c 0.14964,0.0679 0.60664,0.5203 5.06276,5.01236 l 1.52365,1.53594 0.24212,-0.21859 c 0.13316,-0.12022 0.3732,-0.35458 0.53342,-0.52079 0.16022,-0.16621 0.85213,-0.84902 1.53757,-1.51735 0.68544,-0.66832 1.39491,-1.36451 1.57659,-1.54709 0.84276,-0.84688 2.65352,-2.60441 2.74777,-2.66699 0.44755,-0.29717 1.01498,-0.23883 1.39757,0.1437 0.34215,0.3421 0.42526,0.81887 0.22079,1.26671 -0.0718,0.15717 -0.69392,0.78666 -3.15407,3.19124 -0.68315,0.66772 -1.39123,1.36356 -1.57351,1.54631 -0.18227,0.18276 -0.69304,0.68746 -1.13504,1.12156 l -0.80362,0.78928 0.099,0.11239 c 0.0544,0.0618 0.71387,0.73074 1.46538,1.48649 0.7515,0.75575 2.06013,2.07198 2.90804,2.92497 0.84792,0.85299 1.57895,1.60566 1.62451,1.6726 0.13914,0.20444 0.19677,0.39734 0.19333,0.64716 -0.006,0.46178 -0.28094,0.85565 -0.71553,1.02633 -0.16166,0.0635 -0.44317,0.0892 -0.6047,0.0552 z"
+            id="path1678" inkscape:connector-curvature="0" />
+        </svg>
+      </div>
+    </div>
+    <div class="content__tab-background"></div>
+    <!-------- Control-------->
+    <div id="control" class="station">
+      <header class="station__header">
+        <h1 id="control-heading" class="station__heading station__heading--selected">Control</h1>
+      </header>
+      <section id="control-body" class="station__body station__body--displayed">
+        <p id="control-day" class="station__day"></p>
+        <div class="station__offset-container hide">
+          <label class="station__offset-container--title" for="control-offset">Offset:</label>
+          <input id="control-offset" class="station__offset-container--input" value="0" />
+        </div>
+        <div class=station__outer-list-container>
+          <div class="station__list-container">
+            <h2 class="station__title">Control</h2>
+            <ol id="control-list" class="station__ordered-list list">
+
+              <!-- li elements created by javaScript-->
+
+            </ol>
+          </div>
+        </div>
+      </section> <!-- .station__body -->
+    </div><!-- #control-->
+
+    <!-------- First -------->
+    <div id="first" class="station">
+      <header class="station__header">
+        <h1 id="first-heading" class="station__heading">First</h1>
+      </header>
+      <section id="first-body" class="station__body">
+        <p id="first-day" class="station__day"></p>
+        <div class="station__offset-container">
+          <label class="station__offset-container--title" for="first-offset">Offset:</label>
+          <input id="first-offset" class="station__offset-container--input" value="0" />
+        </div>
+        <div class=station__outer-list-container>
+          <div class="station__list-container">
+            <h2 class="station__title">First</h2>
+            <ul id="first-list" class="station__unordered-list list">
+
+              <!-- li elements created by javaScript-->
+
+            </ul>
+          </div>
+        </div><!-- .station__outer-list-container-->
+      </section><!-- .station__body -->
+    </div><!-- #first -->
+
+    <!-------- Ordered -------->
+    <div id="ordered" class="station">
+      <header class="station__header">
+        <h1 id="ordered-heading" class="station__heading">Ordered</h1>
+      </header>
+      <section id="ordered-body" class="station__body">
+        <p id="ordered-day" class="station__day"></p>
+        <div class="station__offset-container">
+          <label class="station__offset-container--title" for="ordered-offset">Offset:</label>
+          <input id="ordered-offset" class="station__offset-container--input" value="1" />
+        </div>
+        <div class=station__outer-list-container>
+          <div class="station__list-container">
+            <h2 class="station__title">Ordered</h2>
+            <ol id="ordered-list" class="station__ordered-list  list">
+
+              <!-- li elements created by javaScript-->
+
+            </ol>
+          </div>
+        </div><!-- .station__outer-list-container-->
+      </section><!-- .station__body -->
+    </div><!-- #ordered-->
+
+    <!-------- Third -------->
+    <div id="third" class="station">
+      <header class="station__header">
+        <h1 id="third-heading" class="station__heading">Third</h1>
+      </header>
+      <section id="third-body" class="station__body">
+        <p id="third-day" class="station__day"></p>
+        <div class="station__offset-container">
+          <label class="station__offset-container--title" for="third-offset">Offset:</label>
+          <input id="third-offset" class="station__offset-container--input" value="0" />
+        </div>
+        <div class=station__outer-list-container>
+          <div class="station__list-container">
+            <h2 class="station__title">Third</h2>
+            <ul id="third-list" class="station__unordered-list  list">
+
+              <!-- li elements created by javaScript-->
+            </ul>
+          </div>
+        </div><!-- .station__outer-list-container -->
+      </section><!-- .station__body -->
+    </div><!-- #third-->
+
+    <!-------- Sublists -------->
+    <div id="sublists" class="station">
+      <header class="station__header">
+        <h1 id="sublists-heading" class="station__heading">Sublists</h1>
+      </header>
+      <section id="sublists-body" class="station__body">
+        <p id="sublists-day" class="station__day"></p>
+        <div class="station__offset-container">
+          <label class="station__offset-container--title" for="sublists-offset">Offset:</label>
+          <input id="sublists-offset" class="station__offset-container--input" value="0" />
+        </div>
+        <div class=station__outer-list-container>
+          <div class="station__list-container">
+            <h2 class="station__title">Sub 1</h2>
+            <ul id="sub1-list" class="station__unordered-list  list ">
+
+              <!-- li elements created by javaScript-->
+
+            </ul>
+          </div>
+          <div class="station__list-container">
+            <h2 class="station__title">Sub 2</h2>
+            <ul id="sub2-list" class="station__unordered-list  list">
+
+              <!-- li elements created by javaScript-->
+
+            </ul>
+          </div>
+          <div class="station__list-container">
+            <h2 class="station__title">Sub 3</h2>
+            <ul id="sub3-list" class="station__unordered-list  list">
+
+              <!-- li elements created by javaScript-->
+
+            </ul>
+          </div>
+        </div><!-- .station__outer-list-container-->
+      </section><!-- .station__body -->
+    </div><!-- #sublists -->
+
+    <!-------- Tally Sheet List -------->
+    <div id="tally" class="station">
+      <header class="station__header">
+        <h1 id="tally-heading" class="station__heading">Tally</h1>
+      </header>
+      <section id="tally-body" class="station__body">
+        <p id="tally-day" class="station__day"></p>
+        <div class="station__offset-container">
+          <label class="station__offset-container--title" for="tally-offset">Offset:</label>
+          <input id="tally-offset" class="station__offset-container--input" value="1" />
+        </div>
+        <div class="station__outer-list-container">
+          <div class="station__list-container">
+            <h2 class="station__title">Tally Parts</h2>
+            <table class="station__table">
+              <tbody id="tally-list" class="station__table-list list">
+                <tr>
+                  <td class="station__list-item">Model </td>
+                  <td class="station__list-item">Quantity</td>
+                  <td class="hide">Part 1</td>
+                  <td class="hide">Part 2</td>
+                  <td class="hide">Part 3</td>
+                  <td class="hide">Part 4</td>
+                  <td class="hide">Part 5</td>
+                  <td class="hide">Part 6</td>
+                  <td class="hide">Part 7</td>
+                  <td class="hide">Part 8</td>
+                  <td class="hide">Part 9</td>
+                </tr>
+                <tr>
+                  <td class="station__list-item">110/12</td>
+                  <td id='SN-110/112-tally-qty' class="station__list-item" data-persistent = "true"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                </tr>
+                <tr>
+                  <td class="station__list-item">NGC-6HC </td>
+                  <td id='NGC-6HC-tally-qty' class="station__list-item" data-persistent = "true"> </td>
+                  <td class="hide">--- </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                </tr>
+                <tr>
+                  <td class="station__list-item">NGC-6F </td>
+                  <td id='NGC-6F-tally-qty' class="station__list-item" data-persistent = "true"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                </tr>
+                <tr>
+                  <td class="station__list-item">NGC-6G </td>
+                  <td id='NGC-6G-tally-qty' class="station__list-item" data-persistent = "true"> </td>
+                  <td class="hide">--- </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                </tr>
+                <tr>
+                  <td class="station__list-item">NGC-6FG </td>
+                  <td id='NGC-6FG-tally-qty' class="station__list-item" data-persistent = "true"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                </tr>
+                <tr>
+                  <td class="station__list-item">15 </td>
+                  <td id='SN-15-tally-qty' class="station__list-item" data-persistent = "true"> </td>
+                  <td class="hide">--- </td>
+                  <td class="hide"> --- </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> ------- </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                </tr>
+                <tr>
+                  <td class="station__list-item">15PT </td>
+                  <td id='SN-15PT-tally-qty' class="station__list-item" data-persistent = "true"> </td>
+                  <td class="hide">--- </td>
+                  <td class="hide"> --- </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> ------- </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                  <td class="hide"> </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><!-- .station__outer-list-container -->
+      </section><!-- .station__body -->
+    </div><!-- #tally -->
+
+    <!-------- Parts-Runner List -------->
+    <div id="parts" class="station">
+      <header class="station__header">
+        <h1 id="parts-heading" class="station__heading">Parts</h1>
+      </header>
+      <section id="parts-body" class="station__body">
+        <p id="parts-day" class="station__day"></p>
+        <div class="station__offset-container">
+          <label class="station__offset-container--title" for="parts-offset">Offset:</label>
+          <input id="parts-offset" class="station__offset-container--input" value="1" />
+        </div>
+        <div class="station__outer-list-container">
+          <div class="station__list-container">
+            <h2 class="station__title">Parts List 1</h2>
+            <ul id="sub-assembly-1-parts-list" class="station__unordered-list  list">
+
+              <!-- li elements created by javaScript-->
+
+            </ul>
+          </div>
+          <div class="station__list-container">
+            <h2 class="station__title">Parts List 2</h2>
+            <ul id="sub-assembly-2-parts-list" class="station__unordered-list  list">
+
+              <!-- li elements created by javaScript-->
+
+            </ul>
+          </div>
+          <div class="station__list-container">
+            <h2 class="station__title">Parts List 3</h2>
+            <ul id="sub-assembly-3-parts-list" class="station__unordered-list  list">
+
+              <!-- li elements created by javaScript-->
+
+            </ul>
+          </div>
+          <div class="station__list-container">
+            <h2 class="station__title">Parts List 4</h2>
+            <ul id="sub-assembly-4-parts-list" class="station__unordered-list  list">
+
+              <!-- li elements created by javaScript-->
+
+            </ul>
+          </div>
+        </div><!-- .station__outer-list-container -->
+      </section><!-- .station__body -->
+    </div><!-- #parts-->
+  </section><!-- .content -->
+
+  <!---- End Lists / Start JavaScript ---->
+  <script src="./scripts/models/unit_model.js"></script>
+  <script src="./scripts/models/line_model.js"></script>
+  <script src="./scripts/views/form_view.js"></script>
+  <script src="./scripts/views/list_view.js"></script>
+  <script src="./scripts/views/day_view.js"></script>
+  <script src="./scripts/controllers/event_controller.js"></script>
+  <script src="./scripts/index.js"></script>
+  <!---- End JavaScript ---->
+</body>
+
+</html>

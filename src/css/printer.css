@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* Set root font-size for easy REM measurements.
+ * This measurement relies on the default font size of the browser
+ * to be 16. 62.5% of 16 is 10, which gives us easy rem calculations.
+ */
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+td {
+  border: 1px solid black;
+  padding: .5rem; }
+
+table {
+  border-collapse: collapse; }
+
+li {
+  cursor: default; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 125%; }
+
+table {
+  margin: auto; }
+
+ol {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 150; }
+
+ul {
+  list-style: none; }
+
+#control,
+.side-bar,
+.context-menu,
+.station__header,
+.content__tab-background,
+.station__offset-container {
+  display: none; }
+
+.station {
+  display: inline-block;
+  width: 48%;
+  height: 750px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top; }
+  .station__day {
+    font-size: 1.5rem;
+    font-weight: 700; }
+  .station__title {
+    font-size: 1.25rem; }
+  .station__list-container {
+    min-height: 2in; }
+
+#evap {
+  height: 8in;
+  width: 12.5in;
+  transform: rotate(90deg);
+  margin-top: 350px; }
+
+#evap-list {
+  height: 7in;
+  width: 10.5in; }
+  #evap-list td {
+    min-width: 50px;
+    text-align: center; }
+
+#parts {
+  width: 100%;
+  height: 11in; }
+  #parts .station__list-container {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 40px; }
+
+.note {
+  font-size: 75%;
+  margin: 0; }
+
+/*# sourceMappingURL=printer.css.map */

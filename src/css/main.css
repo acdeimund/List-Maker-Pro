@@ -1,0 +1,186 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* Set root font-size for easy REM measurements.
+ * This measurement relies on the default font size of the browser
+ * to be 16. 62.5% of 16 is 10, which gives us easy rem calculations.
+ */
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+td {
+  border: 1px solid black;
+  padding: .5rem; }
+
+table {
+  border-collapse: collapse; }
+
+li {
+  cursor: default; }
+
+td {
+  text-align: center; }
+
+.form__element {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700; }
+.form__day {
+  font-size: 4rem; }
+
+.station__day {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center; }
+.station__title {
+  font-size: 2.3rem;
+  min-width: 15rem; }
+.station__list-container {
+  text-align: left; }
+.station__list-item {
+  font-size: 1.6rem; }
+.station__offset-container {
+  font-size: 1.2rem;
+  text-align: center; }
+  .station__offset-container--input {
+    text-align: center; }
+
+.hide {
+  display: none; }
+
+.highlight {
+  background-color: #cee0e8; }
+
+.form > div::after {
+  content: "";
+  display: table;
+  clear: both; }
+.form__element {
+  float: right;
+  width: 100%;
+  text-align: right;
+  margin: 1rem 15%; }
+.form__selection {
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  color: #555; }
+.form__add-button {
+  background-color: #cee0e8;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  padding: 3px;
+  display: block;
+  float: right; }
+.form__selections--secondary {
+  margin-top: 3rem; }
+
+.station__heading {
+  position: relative;
+  float: left;
+  margin: .5rem 2px 0 0;
+  padding: .25rem .75rem;
+  background-color: #ddd;
+  border-radius: 5px 5px 0 0;
+  z-index: 10; }
+  .station__heading:hover {
+    background-color: #eee;
+    cursor: pointer; }
+  .station__heading--selected {
+    background-color: #eee; }
+.station__body {
+  position: absolute;
+  display: none; }
+  .station__body--displayed {
+    display: block;
+    top: 12rem;
+    width: 100%;
+    text-align: center; }
+  .station__body #control-list li {
+    cursor: pointer; }
+.station__outer-list-container {
+  display: inline-flex; }
+.station__list-container {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  .station__list-container:not(:last-child) .station__unordered-list, .station__list-container:not(:last-child) .station__ordered-list {
+    border-right: 1px solid #ddd; }
+.station__title {
+  margin: 3rem 0;
+  text-align: center; }
+.station__ordered-list {
+  min-height: 30rem; }
+.station__unordered-list {
+  list-style: none;
+  min-height: 30rem; }
+.station__offset-container--input {
+  width: 1.6rem;
+  border-radius: 3px;
+  border: none; }
+
+.context-menu {
+  cursor: pointer;
+  top: -999px;
+  left: -999px;
+  position: absolute;
+  z-index: 100;
+  background-color: transparent;
+  padding-top: 2.25rem; }
+  .context-menu__button-container {
+    visibility: hidden;
+    background-color: #eee;
+    height: 30px;
+    padding-left: .5rem;
+    padding-bottom: 15px;
+    opacity: 0;
+    transition: all .2s; }
+  .context-menu svg {
+    border-radius: 50px;
+    display: inline-block; }
+    .context-menu svg:hover {
+      background-color: #cee0e8; }
+  .context-menu #delete:hover {
+    background-color: #fda0a0; }
+
+.side-bar {
+  position: relative;
+  min-height: 100vh;
+  background-color: #3b697c;
+  background-image: linear-gradient(135deg, #3b697c 0%, #5594ae 50%, #3b697c 100%);
+  float: left;
+  width: 25%; }
+  .side-bar__logo-container {
+    position: relative;
+    width: 100%; }
+  .side-bar__logo {
+    display: block;
+    margin: 5rem auto;
+    filter: drop-shadow(1px 1px 2px black); }
+
+.content {
+  position: relative;
+  width: 75%;
+  float: right;
+  background-color: #eee;
+  height: 100vh;
+  overflow: scroll; }
+  .content__tab-background {
+    width: 100%;
+    height: 3.5rem;
+    background-color: white;
+    position: absolute;
+    z-index: 5; }
+
+/*# sourceMappingURL=main.css.map */

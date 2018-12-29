@@ -1,0 +1,34 @@
+.form{
+
+  > div{
+    @include clearfix;
+  }
+
+  &__element{
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin: 1rem 15%;
+  }
+
+  &__selection{
+    border: none;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    color: $color-text-dark;
+  }
+
+  &__add-button{
+    background-color: $true-blue-light;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    padding: 3px;
+    display: block;
+    float: right;
+  }
+
+  &__selections--secondary{
+    margin-top: 3rem;
+  }
+}
